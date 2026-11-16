@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Кампании</h2>
+
+{% for campaign in campaigns %}
+    <p>{{ campaign.title }} — {{ campaign.system_title }}</p>
+{% endfor %}
+{% endblock %}
